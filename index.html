@@ -1,16 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Browse4Pets</title>
-</head>
-<body>
-    <header>
+    <!-- daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .adlam-display-regular {
+            font-family: "ADLaM Display", serif;
+            }
+        
+        .sora {
+        font-family: "Sora", serif;
+        }
+    </style>
 
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary: '#FFDC26',
+            navBg:'#FFF9F4'
+          }
+        }
+      }
+    }
+  </script>
+
+
+
+</head>
+<body >
+    <header>
+        <header class="bg-navBg  ">
+            <nav class="sora">
+                <div class="navbar md:container mx-auto  ">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow ">
+                          <li><a>Find a pet</a></li>
+                          <li><a>Breeds</a></li>
+                          <li><a>Contact us</a></li>
+                        </ul>
+                      </div> 
+                      <img src="c1-assets/logo-header.png" alt="">
+                      <a class="btn btn-ghost text-2xl gap-0">Browse<span class="text-primary">4</span>Pets</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 ">
+                        <li><a>Find a pet</a></li>
+                        <li><a>Breeds</a></li>
+                        <li><a>Contact us</a></li>
+                      </ul>
+                    </div>
+                    <div class="gap-3 navbar-end">
+                      <a class="btn  text-black">Login</a>
+                      <a class="btn px-7 bg-primary text-black">Register</a>
+                    </div>
+                  </div>
+            </nav>
     </header>
     <main>
-
+        <!-- hero section -->
+         <section class="">
+            <div
+                class="hero min-h-screen"
+                style="background-image: url(c1-assets/cat-big.png);">
+                
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                    <p class="mb-5">
+                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                        quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+         </section>
     </main>
 
     <footer></footer>

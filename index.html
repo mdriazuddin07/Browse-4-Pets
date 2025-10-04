@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse4Pets</title>
-    <!-- daisy UI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse4Pets</title>
+  <!-- daisy UI cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 
-    <style>
-        .adlam-display-regular {
-            font-family: "ADLaM Display", serif;
-            }
-        
-        .sora {
-        font-family: "Sora", serif;
-        }
-    </style>
+  <style>
+    .adlam-display-regular {
+      font-family: "ADLaM Display", serif;
+    }
 
-<script>
+    .sora {
+      font-family: "Sora", serif;
+    }
+  </style>
+
+  <script>
     tailwind.config = {
       theme: {
         extend: {
@@ -32,8 +34,8 @@
             clifford: '#da373d',
             primary: '#FFDC26',
             cardbg: '#F9DF8A',
-            navBg:'#FFF9F4'
-            
+            navBg: '#FFF9F4'
+
 
           }
         }
@@ -44,218 +46,205 @@
 
 
 </head>
-<body >
-    
-        
-    <header class="bg-navBg">
-  <nav class="sora">
-    <div class="navbar container mx-auto">
-      
-      
-      <div class="navbar-start flex items-center gap-2">
-        <i class="fa-solid fa-paw text-yellow-400 text-2xl"></i>
-        <a class="btn btn-ghost text-2xl gap-0">
-          Browse<span class="text-primary">4</span>Pets
-        </a>
-      </div>
 
-      
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Find a pet</a></li>
-          <li><a>Breeds</a></li>
-          <li><a>Contact us</a></li>
-        </ul>
-      </div>
+<body>
 
- 
-      <div class="navbar-end hidden lg:flex gap-4 items-center">
-        <i class="fa-regular fa-bell text-lg cursor-pointer hover:text-yellow-500"></i>
-        <i class="fa-solid fa-magnifying-glass text-lg cursor-pointer hover:text-yellow-500"></i>
-        <a class="btn text-black">Login</a>
-        <a class="btn px-7 bg-primary text-black">Register</a>
-      </div>
 
-     
-      <div class="navbar-end lg:hidden">
-        <div class="dropdown dropdown-end">
-          <label tabindex="0" class="btn btn-ghost">
-            <i class="fa-solid fa-bars text-xl"></i>
-          </label>
-          <ul tabindex="0"
-            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+  <header class="bg-navBg">
+    <nav class="sora">
+      <div class="navbar container mx-auto">
+
+
+        <div class="navbar-start flex items-center gap-2">
+          <img src="/c1-assets/logo-header.png" alt="">
+          <a class="btn hidden lg:block btn-ghost text-2xl mt-3">
+            Browse<span class="text-primary">4</span>Pets
+          </a>
+        </div>
+
+
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
             <li><a>Find a pet</a></li>
             <li><a>Breeds</a></li>
             <li><a>Contact us</a></li>
-            <li><a class="btn text-black mt-2">Login</a></li>
-            <li><a class="btn bg-primary text-black mt-2">Register</a></li>
           </ul>
         </div>
+
+
+        <div class="navbar-end hidden lg:flex gap-4 items-center">
+          <i class="fa-regular fa-bell text-lg cursor-pointer hover:text-yellow-500"></i>
+          <i class="fa-solid fa-magnifying-glass text-lg cursor-pointer hover:text-yellow-500"></i>
+          <a class="btn text-black">Login</a>
+          <a class="btn px-7 bg-primary text-black">Register</a>
+        </div>
+
+
+        <div class="navbar-end lg:hidden">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost">
+              <i class="fa-solid fa-bars text-xl"></i>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Find a pet</a></li>
+              <li><a>Breeds</a></li>
+              <li><a>Contact us</a></li>
+              <li><a class="btn text-black mt-2">Login</a></li>
+              <li><a class="btn bg-primary text-black mt-2">Register</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+  </header>
 
 
-    <main>
-       
-         <section class="container mx-auto mb-36 ">
-            <div
-                class="hero min-h-screen mx-auto"
-                style="background-image: url(c1-assets/cat-big.png);">
-                
-                <div class="" >
-                    <div class="relative left-0 top-0">
-                    <h1 class="adlam-display-regular mb-5 text-6xl font-bold">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
-                    <p class="mb-5">
-                      Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!
-                    </p>
-                    <button class="btn bg-primary px-8 py-3">Find a pet</button>
-                    </div>
-                </div>
+  <main>
+
+    <section class="container mx-auto mb-36 ">
+      <div class="hero min-h-screen mx-auto" style="background-image: url(c1-assets/cat-big.png);">
+
+        <div class="grid grid-cols-3 place-items-start mb-52">
+          <div class="flex-1 text-center lg:text-left ">
+          <h1 class="adlam-display-regular  text-4xl lg:text-5xl font-bold leading-tight mb-4 text-black">
+            Pamper Your Pet, <br />
+            Because They Deserve <br />
+            the Best
+          </h1>
+          <p class="text-gray-600 mb-6 max-w-md mx-auto lg:mx-0">
+            Discover a world of treats, toys, and essentials handpicked for
+            your furry friends. Shop now and make tails wag with joy!
+          </p>
+          <button class="bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-3 rounded-md">
+            Find a pet
+          </button>
+        </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Browse By Categories -->
+    <section class="container mx-auto mb-32">
+
+      <h1 class="adlam-display-regular  text-3xl mb-12">Browse By Categories</h1>
+      <div class="justify-center grid  gap-6 md:grid grid-cols-2 lg:grid grid-cols-6">
+        <!-- card-1 -->
+        <div class="card bg-cardbg w-[200px] shadow-xl ">
+          <figure class="px-10 pt-10 ">
+            <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
+              <img src="c1-assets/dog-cartoon.png" alt="Shoes" class="" />
             </div>
-         </section>
 
-         <!-- Browse By Categories -->
-          <section class="container mx-auto mb-32">
-            
-            <h1 class="adlam-display-regular  text-3xl mb-12">Browse By Categories</h1>
-            <div class="justify-center grid  gap-6 md:grid grid-cols-2 lg:grid grid-cols-6">
-                  <!-- card-1 -->
-                <div class="card bg-cardbg w-[200px] shadow-xl ">
-                  <figure class="px-10 pt-10 ">
-                    <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
-                      <img
-                      src="c1-assets/dog-cartoon.png"
-                      alt="Shoes"
-                      class="" />
-                    </div>
-                    
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="text-xl adlam-display-regular">Dog</h2>
-                    <p class="sora ">3 items</p>
-                    
-                  </div>
-                </div>
-                    <!-- card-2 -->
-                    <div class="card bg-cardbg w-[200px] shadow-xl ">
-                      <figure class="px-10 pt-10 ">
-                        <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
-                          <img
-                          src="c1-assets/fish-cartoon.png"
-                          alt="fish"
-                          class="" />
-                        </div>
-                        
-                      </figure>
-                      <div class="card-body items-center text-center">
-                        <h2 class="text-xl adlam-display-regular">Fish</h2>
-                        <p class="sora ">3 items</p>
-                        
-                      </div>
-                    </div>
-                        <!-- card-3 -->
-                <div class="card bg-cardbg w-[200px] shadow-xl ">
-                  <figure class="px-10 pt-10 ">
-                    <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
-                      <img
-                      src="c1-assets/cat-cartoon.png"
-                      alt="Cat"
-                      class="" />
-                    </div>
-                    
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="text-xl adlam-display-regular">Cat</h2>
-                    <p class="sora ">3 items</p>
-                    
-                  </div>
-                </div>
-                    <!-- card-4 -->
-                    <div class="card bg-cardbg w-[200px] shadow-xl ">
-                      <figure class="px-10 pt-10 ">
-                        <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
-                          <img
-                          src="c1-assets/bird-cartoon.png"
-                          alt="Birds"
-                          class="" />
-                        </div>
-                        
-                      </figure>
-                      <div class="card-body items-center text-center">
-                        <h2 class="text-xl adlam-display-regular">Birds</h2>
-                        <p class="sora ">3 items</p>
-                        
-                      </div>
-                    </div>
-                        <!-- card-5 -->
-                <div class="card bg-cardbg w-[200px] shadow-xl ">
-                  <figure class="px-10 pt-10 ">
-                    <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
-                      <img
-                      src="c1-assets/mouse-cartoon.png"
-                      alt="Small pet"
-                      class="" />
-                    </div>
-                    
-                  </figure>
-                  <div class="card-body items-center text-center">
-                    <h2 class="text-xl adlam-display-regular">Small pet</h2>
-                    <p class="sora ">3 items</p>
-                    
-                  </div>
-                </div>
-                    <!-- card-6 -->
-                    <div class="card bg-cardbg w-[200px] shadow-xl ">
-                      <figure class="px-10 pt-10 ">
-                        <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
-                          <img
-                          src="c1-assets/rabbit-cartoon.png"
-                          alt="Shoes"
-                          class="" />
-                        </div>
-                        
-                      </figure>
-                      <div class="card-body items-center text-center">
-                        <h2 class="text-xl adlam-display-regular">Rabi</h2>
-                        <p class="sora ">2 items</p>
-                        
-                      </div>
-                    </div>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-xl adlam-display-regular">Dog</h2>
+            <p class="sora ">3 items</p>
+
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card bg-cardbg w-[200px] shadow-xl ">
+          <figure class="px-10 pt-10 ">
+            <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
+              <img src="c1-assets/fish-cartoon.png" alt="fish" class="" />
             </div>
-          </section>
-          <!-- Everyday low Price -->
-           <section class="bg-navBg h-[775px] ">
-            <div class="container mx-auto w-96 h-96">
-              <div class="mt-36">
-                <h1 class="adlam-display-regular text-3xl mt-[140px]">Everyday low Price</h1>
-              </div>
+
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-xl adlam-display-regular">Fish</h2>
+            <p class="sora ">3 items</p>
+
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div class="card bg-cardbg w-[200px] shadow-xl ">
+          <figure class="px-10 pt-10 ">
+            <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
+              <img src="c1-assets/cat-cartoon.png" alt="Cat" class="" />
+            </div>
+
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-xl adlam-display-regular">Cat</h2>
+            <p class="sora ">3 items</p>
+
+          </div>
+        </div>
+        <!-- card-4 -->
+        <div class="card bg-cardbg w-[200px] shadow-xl ">
+          <figure class="px-10 pt-10 ">
+            <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
+              <img src="c1-assets/bird-cartoon.png" alt="Birds" class="" />
+            </div>
+
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-xl adlam-display-regular">Birds</h2>
+            <p class="sora ">3 items</p>
+
+          </div>
+        </div>
+        <!-- card-5 -->
+        <div class="card bg-cardbg w-[200px] shadow-xl ">
+          <figure class="px-10 pt-10 ">
+            <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
+              <img src="c1-assets/mouse-cartoon.png" alt="Small pet" class="" />
+            </div>
+
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-xl adlam-display-regular">Small pet</h2>
+            <p class="sora ">3 items</p>
+
+          </div>
+        </div>
+        <!-- card-6 -->
+        <div class="card bg-cardbg w-[200px] shadow-xl ">
+          <figure class="px-10 pt-10 ">
+            <div class="bg-white rounded-full p-4 flex items-center justify-items-center ">
+              <img src="c1-assets/rabbit-cartoon.png" alt="Shoes" class="" />
+            </div>
+
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="text-xl adlam-display-regular">Rabi</h2>
+            <p class="sora ">2 items</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Everyday low Price -->
+    <section class="bg-navBg h-[775px] ">
+      <div class="container mx-auto w-96 h-96">
+        <div class="mt-36">
+          <h1 class="adlam-display-regular text-3xl mt-[140px]">Everyday low Price</h1>
+        </div>
+        <div class="">
+          <div class="card card-side bg-cardbg shadow-xl">
+
+            <div class="card-body">
+              <h1 class="adlam-display-regular text-3xl">T-Shirt for Dogs</h1>
+              <p class="mb-5">
+                Discover a world of treats, toys, and essentials handpicked for
+              </p>
               <div class="">
-                <div class="card card-side bg-cardbg shadow-xl">
-                  
-                  <div class="card-body">
-                    <h1 class="adlam-display-regular text-3xl">T-Shirt for Dogs</h1>
-                    <p class="mb-5">
-                      Discover a world of treats, toys, and essentials handpicked for 
-                    </p>
-                    <div class="">
-                      <button class="btn btn-primar">Shop Now</button>
-                    </div>
-                  </div>
-                  <figure class="">
-                    <img
-                      src="c1-assets/cute-pet-mid.png"
-                      alt="Movie" />
-                  </figure>
-                </div>
-                
+                <button class="btn btn-primar">Shop Now</button>
               </div>
             </div>
-           
-           </section>
-    </main>
+            <figure class="">
+              <img src="c1-assets/cute-pet-mid.png" alt="Movie" />
+            </figure>
+          </div>
 
-    <footer></footer>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer></footer>
 </body>
+
 </html>
